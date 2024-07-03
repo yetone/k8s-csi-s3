@@ -1,4 +1,4 @@
-module github.com/yandex-cloud/k8s-csi-s3
+module github.com/yetone/k8s-csi-s3
 
 go 1.15
 
