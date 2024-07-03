@@ -23,8 +23,8 @@ import (
 	"regexp"
 	"strconv"
 
-	"github.com/yandex-cloud/k8s-csi-s3/pkg/mounter"
-	"github.com/yandex-cloud/k8s-csi-s3/pkg/s3"
+	"github.com/yetone/k8s-csi-s3/pkg/mounter"
+	"github.com/yetone/k8s-csi-s3/pkg/s3"
 	"github.com/golang/glog"
 	"golang.org/x/net/context"
 

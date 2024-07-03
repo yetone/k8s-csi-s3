@@ -6,7 +6,7 @@ import (
 
 	"context"
 
-	"github.com/yandex-cloud/k8s-csi-s3/pkg/s3"
+	"github.com/yetone/k8s-csi-s3/pkg/s3"
 	goofysApi "github.com/kahing/goofys/api"
 	"github.com/kahing/goofys/api/common"
 )
