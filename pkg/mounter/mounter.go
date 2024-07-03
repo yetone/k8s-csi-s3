@@ -29,6 +29,7 @@ const (
 	s3fsMounterType     = "s3fs"
 	geesefsMounterType  = "geesefs"
 	rcloneMounterType   = "rclone"
+	goofysMounterType   = "goofys"
 	TypeKey             = "mounter"
 	BucketKey           = "bucket"
 	OptionsKey          = "options"
@@ -50,6 +51,9 @@ func New(meta *s3.FSMeta, cfg *s3.Config) (Mounter, error) {
 
 	case rcloneMounterType:
 		return newRcloneMounter(meta, cfg)
+	
+	case goofysMounterType:
+		return newGoofysMounter(meta, cfg)
 
 	default:
 		// default to GeeseFS
